@@ -130,3 +130,17 @@ Projects:
     notify-email: shaikhnavid14@gmail.com
     build-context: ./
     depends-on: null
+
+  - id: 12
+    app-id: gluster
+    job-id: storagesig-heketi
+    git-url: https://github.com/heketi/heketi
+    git-branch: master
+    git-path: extras/docker/centos
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: bamachrn@gmail.com
+    build-context: ./
+    prebuild-script: ./prepare-build.sh
+    prebuild-context: extras/docker/centos
+    depends-on: centos/centos:latest
