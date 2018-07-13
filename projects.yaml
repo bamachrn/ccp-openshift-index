@@ -6,7 +6,7 @@ Projects:
     git-branch: master
     git-path: demo
     target-file: Dockerfile.demo
-    desired-tag: 1
+    desired-tag: release
     notify-email: container-status-report@centos.org
     depends-on: centos/centos:latest
 
